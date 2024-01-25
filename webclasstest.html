@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class work</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+            background-color: aqua;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50vh 50vh;
+
+        }
+        #section1,#section2,#section3,#section4{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #section2 img{
+            width: 90%;
+            height: 90%;
+            cursor: pointer;
+            direction: center;
+
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+    
+       <div id="section1">
+        <ol type="I">
+            <li>introduction</li>
+            <li>Part1</li>
+            <ol type="A">
+                <li>description</li>
+                <li>Examples</li>
+                <ol type="1">
+                    <li>Reference one</li>
+                    <li>Reference two</li>
+                </ol>
+            </ol>
+            <li>Part 2</li>
+            <li>Summary </li>
+        </ol>
+       </div>
+<div id="section2">
+    <a href="#section1"><img src="mili.jpg" alt="img Link"></a>
+</div>
+
+     <div  id="section3">
+        <table border="1">
+            <tr>
+                <td>A</th>
+            </tr>
+            <td>this is a table
+                <table border="1" style="margin-left: 20%;">
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+                </table>
+            </td>
+            <tr aria-colspan="1">
+                <td>d</td>
+                <td>e</td>
+            </tr>
+        </table>
+
+     </div>
+    
+
+     <div id="section4">
+        <form action="#">
+            <div>
+                <label for="first Name">first Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div>
+                <label for="last Name">first Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" id="password" name="password" password>
+            </div>
+            <div>
+                <label for="country">country:</label>
+                <select name="country" id="country" required>
+                    <option value="">--Select country--</option>
+                    <option value="Ethiopia">ethiopia</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="Keniya">Keniya</option>    
+                </select>
+            </div>
+            <div>
+                <label for="Comment">Comment:</label>
+                <textarea name="Comment" id="Comment"></textarea>
+            </div>
+            <div class="button-field">
+                <button type="submit"> submit query </button>
+                <button type="reset"> Reset </button>
+            </div>
+</form>
+
+     </div>
+
+    </div>
+   
+
+</body>
+</html>
